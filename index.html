@@ -48,8 +48,8 @@
             <h1 class="display-3 text-uppercase fw-extrabold text-gold mb-2">Joker Studio</h1>
             <p class="fs-4 text-uppercase tracking-widest text-light mb-5">Estilo • Tinta • Identidad</p>
             <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                <a href="#servicios" class="btn btn-joker-gold btn-lg px-5 py-3">Agendar Barbería</a>
-                <a href="#servicios" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase">Cotizar Tattoo</a>
+                <a href="#barberia" class="btn btn-joker-gold btn-lg px-5 py-3">Agendar Barbería</a>
+                <a href="#tattoo" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase">Cotizar Tattoo</a>
             </div>
         </div>
     </header>
@@ -61,30 +61,6 @@
                     <h2 class="display-5 text-gold text-uppercase mb-4">El Ritual <span class="text-white fw-light">de Identidad</span></h2>
                     <p class="lead text-light-muted">En <strong>Joker Studio 333</strong> no ofrecemos servicios rápidos; creamos una experiencia de transformación. Fusionamos la precisión quirúrgica de la barbería premium con el arte inmortal en la piel.</p>
                     <p class="text-light-muted">Cada trazo, cada corte y cada línea se diseñan para representar quién sos. Encontrá tu versión más imponente con nosotros.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="concept-visual-grid p-4 rounded-4 shadow-lg">
-                        <div class="row g-3">
-                            <div class="col-6">
-                                <div class="p-4 text-center service-mini-card rounded-3">
-                                    <h3 class="display-5 text-gold">💈</h3>
-                                    <h4 class="h6 text-uppercase tracking-wider mt-2">Barbería</h4>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="p-4 text-center service-mini-card rounded-3">
-                                    <h3 class="display-5 text-gold">💉</h3>
-                                    <h4 class="h6 text-uppercase tracking-wider mt-2">Tattoo Studio</h4>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="p-4 text-center service-mini-card rounded-3">
-                                    <h3 class="display-6 text-gold">⚡</h3>
-                                    <h4 class="h6 text-uppercase tracking-wider mt-2">Concepto 333</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -101,7 +77,7 @@
                 
                 <div class="col-lg-5 col-md-6">
                     <div class="p-5 text-center joker-card rounded-4 shadow-lg h-100 d-flex flex-column justify-content-between">
-                        <div>
+                        <div id="barberia">
                             <div class="mb-4">
                                 <span class="display-2 text-gold">💈</span>
                             </div>
@@ -126,7 +102,7 @@
 
                 <div class="col-lg-5 col-md-6">
                     <div class="p-5 text-center joker-card rounded-4 shadow-lg h-100 d-flex flex-column justify-content-between">
-                        <div>
+                        <div id="tattoo">
                             <div class="mb-4">
                                 <div class="joker-logo-container mx-auto mb-2">
                                     <span class="display-2 text-gold">💉</span>
@@ -302,6 +278,55 @@
             </div>
         </div>
     </section>
+    
+    <!-- Sección del Mapa e Información -->
+    <section id="ubicacion" class="py-5 bg-black border-top border-dark text-center">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-4 text-uppercase">¿Dónde <span class="text-gold">Encontrarme</span>?</h2>
+                <p class="text-light-muted max-width-600 mx-auto">Te espero en mi espacio para brindarte una atención 100% personalizada y sin apuros. ¡Visítame!</p>
+            </div>
+
+            <!-- Tarjetas de Información Visuales -->
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 text-center joker-card rounded-4 shadow-lg border border-dark h-100">
+                        <div class="fs-1 mb-2">📍</div>
+                        <h3 class="h5 text-gold text-uppercase tracking-widest">Dirección</h3>
+                        <p class="text-light-muted mb-0">Andres Baranda 3289, Quilmes<br>Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 text-center joker-card rounded-4 shadow-lg border border-dark h-100">
+                        <div class="fs-1 mb-2">🕒</div>
+                        <h3 class="h5 text-gold text-uppercase tracking-widest">Horarios</h3>
+                        <p class="text-light-muted mb-0">Mar a Vie: 12:00 a 20:00 hs<br>Sábados: 12:00 a 20:00 hs</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 text-center joker-card rounded-4 shadow-lg border border-dark h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="fs-1 mb-2">⚡</div>
+                            <h3 class="h5 text-gold text-uppercase tracking-widest">Atención</h3>
+                            <p class="text-light-muted mb-0">Exclusivo con turno previo para cuidar cada detalle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa con Borde Redondeado Estilo Premium -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="mapa-wrapper shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.497707216144!2d-58.25858492525142!3d-34.74305337290456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f007f75f1d1%3A0xa25b24d9d17c9bf6!2sJoker%20Studio!5e0!3m2!1sen!2sar!4v1784316916178!5m2!1sen!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="py-5 bg-black border-top border-dark text-center">
         <div class="container">

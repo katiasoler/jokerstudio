@@ -169,23 +169,6 @@ body {
     box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
 }
 
-/* Contenedor del logo de tu socio Esquivel */
-.esquivel-logo-container {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid var(--gold);
-    padding: 3px;
-    overflow: hidden;
-    background-color: #000;
-}
-
-.esquivel-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
 /* ==========================================================================
    PORTAFOLIO (GALERÍA)
@@ -244,4 +227,33 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-muted);
+}
+/* ==========================================================================
+   MAPA DE UBICACIÓN
+   ========================================================================== */
+
+/* Contenedor del mapa necesario para forzar el redondeado del iframe */
+.mapa-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid rgba(212, 175, 55, 0.2); /* Fino borde dorado sutil */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    line-height: 0;
+}
+
+.mapa-wrapper iframe {
+    width: 100%;
+    display: block;
+    filter: grayscale(20%) contrast(110%); /* Toque visual para integrarse al look oscuro */
+}
+
+/* Efecto hover extra para las tarjetas (reutilizando tu clase .joker-card) */
+.joker-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.joker-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37 !important; /* Resalta el borde en dorado al pasar el cursor */
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1) !important;
 }
